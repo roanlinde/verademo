@@ -133,8 +133,8 @@ jobs:
           command: "scan" 
           type: "directory"
           source: "./"
-          format: "table"
-          debug: false
+          format: "json"
+          debug: true
           fail_build: true
 
   deploy_application:
