@@ -84,8 +84,8 @@ jobs:
         uses: veracode/veracode-fix@v1.0.5
         with:
           inputFile: filtered_results.json
-          vid: ${{ secrets.VID }}
-          vkey: ${{ secrets.VKEY }}
+          vid: ${{ secrets.VERACODE_API_ID }}
+          vkey: ${{ secrets.VERACODE_API_KEY }}
           prComment: true
           fixType: single     
   # Convert Pipeline scan results to the SARFI format  
